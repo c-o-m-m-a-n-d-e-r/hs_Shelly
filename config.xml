@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <module category="Datenaustausch" context="SHELLY" id="14169" name="Shelly" internal_name="Shelly" external_name="Shelly (14169)" version="2.0">
+            <inputs>
+                <input type="string" const_name="ip" init_value="">IP</input>
+                <input type="number" const_name="port" init_value="80">Port</input>
+                <input type="number" const_name="power">Ein (1) / Aus (0)</input>
+                <input type="number" const_name="brightness">Helligkeit (0-100)</input>
+                <input type="number" const_name="interval" init_value="30">Interval (Sek.)</input>
+                <input type="number" const_name="triggerstatus">Status Trigger</input>
+                <input type="number" const_name="autofirmwareupdate" init_value="0">An (1) / Aus (0)</input>
+                <input type="number" const_name="triggerfirmwareupdate">Trigger FW Update</input>
+                <input type="number" const_name="reboot">Reboot Shelly</input>
+                <input type="number" const_name="resettotal">Reset Total Leistung</input>
+                <input type="number" const_name="dimmon" init_value="0">An (1) / Aus (0)</input>
+                <input type="number" const_name="dimmAus" init_value="0">An (1) / Aus (0)</input>
+                <input type="number" const_name="channel" init_value="0">Channel</input>
+                <input type="string" const_name="type" init_value="relay">Type (light / relay / color / white / roller / sensor)</input>
+                <input type="number" const_name="red">Rot (0-100)</input>
+                <input type="number" const_name="green">Grün (0-100)</input>
+                <input type="number" const_name="blue">Blau (0-100)</input>
+                <input type="number" const_name="white">Weiss (0-100)</input>
+                <input type="number" const_name="gain">Gain (0-100)</input>
+                <input type="number" const_name="red255">Rot (0-255)</input>
+                <input type="number" const_name="green255">Grün (0-255)</input>
+                <input type="number" const_name="blue255">Blau (0-255)</input>
+                <input type="number" const_name="white255">Weiss (0-255)</input>
+                <input type="number" const_name="openclose">Auf (1) / Zu (0)</input>
+                <input type="number" const_name="stop">Stop</input>
+                <input type="number" const_name="position">Position (0-100)</input>
+                <input type="number" const_name="duration">Duration</input>
+                <input type="number" const_name="calibrate">Calibrate</input>
+                <input type="number" const_name="callbackport" init_value="40001">Callbackport</input>
+                <input type="string" const_name="username" init_value="">Benutzername</input>
+                <input type="string" const_name="password" init_value="">Passwort</input>
+                <input type="number" const_name="enabledebug" init_value="0">Debug</input>
+            </inputs>
+            <outputs>
+                <output type="number" const_name="connectionstate" init_value="0">Verbindungsstatus</output>
+                <output type="number" const_name="power" init_value="0">Status</output>
+                <output type="number" const_name="brightness" init_value="0">Helligkeit</output>
+                <output type="number" const_name="load" init_value="0">Leistung akt.</output>
+                <output type="number" const_name="loadtotal" init_value="0">Leistung total</output>
+                <output type="number" const_name="overload" init_value="0">Überlast</output>
+                <output type="number" const_name="temp" init_value="0">Temperatur</output>
+                <output type="number" const_name="tempalert" init_value="0">Temperaturalarm</output>
+                <output type="number" const_name="firmwareupdate" init_value="0">FW-Update verfügbar</output>
+                <output type="number" const_name="red" init_value="0">Rot</output>
+                <output type="number" const_name="green" init_value="0">Grün</output>
+                <output type="number" const_name="blue" init_value="0">Blau</output>
+                <output type="number" const_name="white" init_value="0">Weiss</output>
+                <output type="number" const_name="gain" init_value="0">Gain</output>
+                <output type="number" const_name="red255" init_value="0">Rot</output>
+                <output type="number" const_name="green255" init_value="0">Grün</output>
+                <output type="number" const_name="blue255" init_value="0">Blau</output>
+                <output type="number" const_name="white255" init_value="0">Weiss</output>
+                <output type="number" const_name="exttemp1" init_value="0">Ext. Temp 1</output>
+                <output type="number" const_name="exttemp2" init_value="0">Ext. Temp 2</output>
+                <output type="number" const_name="exttemp3" init_value="0">Ext. Temp 3</output>
+                <output type="number" const_name="postion" init_value="0">Position</output>
+                <output type="number" const_name="inputstatus" init_value="0">Input Status</output>
+                <output type="number" const_name="inputevent" init_value="0">Input Event</output>
+                <output type="number" const_name="humidity" init_value="0">Feuchtigkeit</output>
+                <output type="number" const_name="battery" init_value="0">Batterie</output>
+                <output type="number" const_name="leckage" init_value="0">Leckage</output>
+                <output type="number" const_name="motion" init_value="0">Motion</output>
+                <output type="number" const_name="tamper" init_value="0">Tamper</output>
+            </outputs>
+            <remanent_variables>
+            </remanent_variables>
+            <imports>
+                <import>hsl20_4_timer</import>
+            </imports>
+        </module>
+    </modules>
+    <logging type="None" ip="" port="" />
+</config>
